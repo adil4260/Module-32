@@ -3,16 +3,11 @@ const loadPost = () => {
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
-            //   console.log(data);
+            console.log(data);
             displayPosts(data);
         });
 };
-// {
-//     "userId": 4,
-//     "id": 32,
-//     "title": "doloremque illum aliquid sunt",
-//     "body": "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime"
-// }
+
 const displayPosts = (posts) => {
     // 1. get the container and empty the container
     const postsContainer = document.getElementById("post-container");

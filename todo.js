@@ -4,12 +4,7 @@ const loadTodo = async () => {
     const data = await res.json();
     displayTodo(data);
 };
-// {
-//     "userId": 4,
-//     "id": 77,
-//     "title": "maiores aut nesciunt delectus exercitationem vel assumenda eligendi at",
-//     "completed": false
-// }
+
 
 const displayTodo = (todos) => {
     //   1

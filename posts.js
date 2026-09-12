@@ -15,9 +15,9 @@ const displayPosts = (posts) => {
     postContainer.innerHTML = "";
     posts.forEach((post) => {
 
-        const li = document.createElement("li");
+        const li = document.createElement("ol");
         li.innerText = post.title;
-        console.log(li);
+        console.log(ol);
 
         //   3.add li into container
         postContainer.appendChild(li)
