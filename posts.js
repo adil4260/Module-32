@@ -7,17 +7,14 @@ const loadPost = () => {
             displayPosts(data);
         });
 };
-
-const displayPosts = (posts) => {
-
+const displayPosts = (posts) => {  //এখানে posts হচ্ছে data
     // 1. get the container
     const postContainer = document.getElementById("post-container");
-    postContainer.innerHTML = "";
-    posts.forEach((post) => {
 
-        const li = document.createElement("ol");
+    posts.forEach((post) => {
+        const li = document.createElement("li");
         li.innerText = post.title;
-        console.log(ol);
+        console.log(li);
 
         //   3.add li into container
         postContainer.appendChild(li)

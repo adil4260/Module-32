@@ -4,8 +4,6 @@ const loadTodo = async () => {
     const data = await res.json();
     displayTodo(data);
 };
-
-
 const displayTodo = (todos) => {
     //   1
     const todoContainer = document.getElementById("todo-container");

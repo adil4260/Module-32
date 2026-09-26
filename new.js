@@ -7,24 +7,23 @@ const loadPost = () => {
             displayPosts(data);
         });
 };
-
 const displayPosts = (posts) => {
     // 1. get the container and empty the container
     const postsContainer = document.getElementById("post-container");
-    postsContainer.innerHTML = "";
+
     posts.forEach((post) => {
         // 2.create element
         const postCard = document.createElement("div");
-        postCard.innerHTML = `<div class="post-card">
-        <h2>${post.title}</h2>
-        <p>
-          ${post.body}
-        </p>
-      </div>`;
+        postCard.innerHTML =
+            `<div class="post-card">
+                        <h2>${post.title}</h2>
+                           <p>
+                             ${post.body}
+                           </p>
+                    </div>`;
 
         //   3.add to the container
         postsContainer.append(postCard);
     });
 };
-
 loadPost();
